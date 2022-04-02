@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class_4 Code</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/jquery-ui.css">
+        <script src="js/jquery-3.6.0.js"></script>
+        <script src="js/jquery-ui.js"></script>
+    <script>
+        function onclick_myfun() {
+            var number1 = document.getElementById("number1").value;
+            var number2 = document.getElementById("number2").value;
+            var add = Number(number1) + Number(number2);
+            document.getElementById('sum').value = add;
+        }
+
+        function onchange_myfun(first_number2 = 0, second_number2 = 0) {
+            var add2 = Number(first_number2) + Number(second_number2)
+            document.getElementById('sum2').value = add2;
+        }
+        function onkeyup_myfun(first_number3, second_number3) {
+            var first_number3 = document.getElementById("first_number3").value;
+            var second_number3 = document.getElementById("second_number3").value;
+            var add3 = Number(first_number3) + Number(second_number3)
+            document.getElementById('sum3').value = add3;
+        }
+    </script>
+     <script>
+        $( function() {
+          $( "#datepicker" ).datepicker();
+        } );
+        </script>
+</head>
+
+<body>
+    <div style="padding: 5rem; background-color: brown; color:#fff;">
+    <div>
+        <input type="text" id="datepicker" placeholder="Enter Date">
+    </div>
+    <br><br>
+        <div>
+            <table>
+                <tr>
+                    <td>Enter First Number</td>
+                    <td><input type="number" id="number1" name="number1"></td>
+                </tr>
+                <tr>
+                    <td>Enter Second Number</td>
+                    <td><input type="number" id="number2" name="number2"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="right"><input type="submit" name="" id="btn" onclick="onclick_myfun()"></td>
+                </tr>
+                <tr>
+                    <td>Sum</td>
+                    <td><input type="number" id="sum" name="sum"></td>
+                </tr>
+            </table>
+        </div>
+
+        <br> <br>
+
+        <div>
+            <table>
+                <tr>
+                    <td>Enter First Number</td>
+                    <td><input type="number" id="first_number2" name="first_number2"
+                            onchange="onchange_myfun(this.value,getElementById('second_number2').value)"></td>
+                </tr>
+                <tr>
+                    <td>Enter Second Number</td>
+                    <td><input type="number" id="second_number2" name="second_number2"
+                            onchange="onchange_myfun(getElementById('first_number2').value,this.value)"></td>
+                </tr>
+                <tr>
+                    <td>Sum of First and Second Number</td>
+                    <td><input type="number" id="sum2" name="sum2"></td>
+                </tr>
+            </table>
+        </div>
+
+        <br> <br>
+
+        <div>
+            <table>
+                <tr>
+                    <td>Enter First Number</td>
+                    <td><input type="number" id="first_number3" name="first_number3"
+                            onkeyup="onkeyup_myfun(this.value,getElementById('second_number3'))"></td>
+                </tr>
+                <tr>
+                    <td>Enter Second Number</td>
+                    <td><input type="number" id="second_number3" name="second_number3"
+                            onkeyup="onkeyup_myfun(getElementById('first_number3'),this.value)"></td>
+                </tr>
+                <tr>
+                    <td>Sum of First and Second Number</td>
+                    <td><input type="number" id="sum3" name="sum3"></td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Practise_3</title>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/Practise_3.css">
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    </head>
+    <body class="bg-light">
+      <div class="container">
+        <div class="text-center">
+            <img id="img1" class="mt-3 mb-2" src="images/1.png">
+            <h4>Welcome</h4>
+        </div>
+        
+        <form class="border" style="background-color: aquamarine;">
+            <div class="container">
+                <h4 class="mb-3">Sign Up</h4>
+                <div class="row mb-3">
+                    <label for="firstname" class="form-label">Student Name</label>
+                    <div class="col-sm-3">
+                       <!-- <label for="firstname" class="form-label">First Name</label>-->
+                        <input type="text" class="form-control" id="firstname" placeholder="Enter First Name">
+                    </div>
+                    <div class="col-sm-3">
+                        <!-- <label for="lasttname" class="form-label">Last Name</label>-->
+                         <input type="text" class="form-control" id="lastname" placeholder="Enter Last Name">
+                     </div>
+                </div>
+    
+                <div class="row mb-3">
+                    <label for="birth_date" class="form-label">Birth Date</label>
+                    <div class="col-sm-2">
+                        <input type="text" class="form-control" id="b_day" placeholder="Day">
+                        <label for="b_day" class="form-label mch">Day</label>
+                    </div>
+    
+                    <div class="col-sm-2">
+                        <select class="form-select" id="inputGroupSelect01">
+                            <option selected disabled>Month</option>
+                            <option value="1">January</option>
+                            <option value="2">February</option>
+                            <option value="3">March</option>
+                            <option value="4">April</option>
+                            <option value="5">May</option>
+                            <option value="6">June</option>
+                            <option value="7">July</option>
+                            <option value="8">August</option>
+                            <option value="9">September</option>
+                            <option value="10">Octber</option>
+                            <option value="11">November</option>
+                            <option value="12">December</option>
+                          </select>
+                          <label for="birth_date_Month" class="form-label mt-1 mch">Month</label>
+                    </div>
+                    <div class="col-sm-2">
+                        <input type="text" class="form-control mb-1" id="b_year" placeholder="Year">
+                        <label for="b_year" class="form-label mch">Year</label>
+                    </div>
+                </div>
+    
+                <div class="row mb-3">
+                    <div class="col-sm-3">
+                        <label for="student_id" class="form-label">Student ID</label>
+                        <input type="text" class="form-control" id="student_id" placeholder="Enter Student ID">
+                    </div>
+                    <div class="col-sm-3">
+                        <label for="student_dept" class="form-label">Student Department</label>
+                        <input type="text" class="form-control" id="Department" placeholder="Enter Student Department">
+                    </div>
+                </div>
+    
+                <div class="row mb-3">
+                    <div class="col-sm-6">
+                        <label for="Adress" class="form-label">Adress</label>
+                        <input type="text" class="form-control" id="Adress" placeholder="Enter Adress">
+                    </div>
+                </div>
+    
+                <div class="row">
+                    <div class="col-sm-3">
+                        <label for="Email" class="form-label">Student Email</label>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                            <input type="text" class="form-control" placeholder="xyz@ugrad.iiuc.ac.bd" aria-label="Username" aria-describedby="basic-addon1">
+                          </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <label for="mobile" class="form-label">Mobile Number</label>
+                         <input type="text" class="form-control" id="mobile" placeholder="Enter Mobile Number">
+                     </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-sm-6">
+                        <button type="button" class="btn btn-success" align="center">Submit</button>
+                    </div>
+                </div>
+    
+            </div>
+        </form>
+      </div>
+    </body>
+</html>
